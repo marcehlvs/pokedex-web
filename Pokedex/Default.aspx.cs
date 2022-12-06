@@ -20,7 +20,18 @@ namespace Pokedex
             PokemonNegocio negocio = new PokemonNegocio();
             ListaPokemon = negocio.listarConSP(); //Cargo con el resultado de buscar en la db los datos de la lista
             //Puedo utilizar en el front del Default la lista
+            if (!IsPostBack)
+            {
+                repRepetidor.DataSource = ListaPokemon;
+                repRepetidor.DataBind();
 
+            }
+
+        }
+
+        protected void btnEjemplo_Click(object sender, EventArgs e)
+        {
+            string valor = ((Button)sender).CommandArgument;
         }
     }
 }

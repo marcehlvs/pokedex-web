@@ -13,7 +13,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark d-flex">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -27,6 +27,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="PokemonsLista.aspx">Lista Pokemons</a>
                         </li>
+                        <li class="nav-item d-flex justify-content-end">
+                            <a class="nav-link" href="DetallePokemon.aspx">Detalle Pokemon</a>
+                        </li>
+                       <%-- <li class="nav-item">
+                            <a class="nav-link" href="FormularioPokemon.aspx">Formulario Pokemon</a>
+                        </li>--%>
                         
                     </ul>
                    
